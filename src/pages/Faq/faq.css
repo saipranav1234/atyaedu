@@ -1,0 +1,296 @@
+.faq-container {
+    display: flex;
+    justify-content: center;
+    /* padding: 5rem 10rem; */
+    margin-top: 5rem;
+    padding: 2rem 0;
+    /* margin-bottom: 15rem; */
+    width: 100%;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+}
+
+.faq-left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-bottom: 2rem; /* Adds spacing between left and right sections */
+}
+
+.faq-left h2 {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.faq-left h1 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.faq-left p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.faq-form {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap; /* Make sure the input and button stack on smaller screens */
+}
+
+.faq-input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    max-width: 300px; /* Prevent input from growing too wide */
+}
+
+.faq-submit {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 100px; /* Ensure the button is a reasonable size */
+}
+
+.faq-submit:hover {
+    background-color: #0072ff;
+}
+
+.faq-right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    display: flex;
+    flex-direction: column; /* Stack the question and answer vertically */
+    align-items: flex-start;
+    padding: 1rem;
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.faq-item:hover {
+    background-color: #f1f1f1;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Professional font for the question */
+}
+
+.faq-question span {
+    font-size: 1.5rem;
+    color: #2c2c2c;
+    margin-right: 1rem; /* Space between icon and question text */
+}
+
+.faq-answer {
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    /* border-left: 3px solid #28a745; */
+    /* background: #e9fbe9; */
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    width: 100%; /* Ensure the answer takes up full width */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border: 2px solid rgba(128, 128, 128, 0.526); */
+}
+
+
+@media screen and (max-width : 1200px) {
+    .faq-container {
+        width: 90%;
+    }
+    
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .faq-container {
+        flex-direction: column;
+        padding: 1rem; /* Reduce padding on smaller screens */
+        margin-top: 1rem;
+        
+    }
+
+    .faq-left, .faq-right {
+        width: 100%; /* Stack the left and right sections on smaller screens */
+        margin-bottom: 1rem;
+    }
+
+    .faq-left h1 {
+        font-size: 1.8rem;
+    }
+
+    .faq-left h2 {
+        font-size: 1.3rem;
+    }
+
+    .faq-form {
+        flex-direction: column; /* Stack input and button vertically */
+    }
+
+    .faq-input {
+        max-width: 100%; /* Allow input to take full width */
+        margin-bottom: 1rem;
+    }
+
+    .faq-submit {
+        min-width: 100%; /* Make the button full width */
+    }
+
+    .faq-item {
+        padding: 0.8rem; /* Slightly reduce padding for small screens */
+    }
+
+}
+
+@media (max-width: 480px) {
+    .faq-left h1 {
+        font-size: 1.5rem; /* Further reduce font size on smaller screens */
+    }
+
+    .faq-left h2 {
+        font-size: 1.2rem;
+    }
+
+    .faq-item {
+        padding: 0.6rem; /* Adjust padding for very small screens */
+    }
+
+    .faq-submit {
+        padding: 0.4rem 0.8rem; /* Adjust button padding */
+    }
+}
+
+@media (max-width:768px) {
+    .faq-container {
+        flex-direction: column;
+        padding: 1rem; /* Reduce padding on smaller screens */
+        width: 100%;
+        
+    }
+
+    .faq-left, .faq-right {
+        width: 100%; /* Stack the left and right sections on smaller screens */
+        margin-bottom: 1rem;
+    }
+
+    .faq-left h1 {
+        font-size: 1.8rem;
+    }
+
+    .faq-left h2 {
+        font-size: 1.3rem;
+    }
+
+    .faq-form {
+        flex-direction: column; /* Stack input and button vertically */
+    }
+
+    .faq-input {
+        max-width: 100%; /* Allow input to take full width */
+        margin-bottom: 1rem;
+    }
+
+    .faq-submit {
+        min-width: 100%; /* Make the button full width */
+    }
+
+    .faq-item {
+        padding: 0.8rem; /* Slightly reduce padding for small screens */
+    }
+}
+
+@media (max-width:900px) {
+    .faq-container {
+        flex-direction: column;
+        padding: 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .faq-left, .faq-right {
+        width: 80%; /* Stack the left and right sections on smaller screens */
+        margin-bottom: 1rem;
+    }
+
+    .faq-left h1 {
+        font-size: 1.8rem;
+    }
+
+    .faq-left h2 {
+        font-size: 1.3rem;
+    }
+
+    .faq-form {
+        flex-direction: column; /* Stack input and button vertically */
+    }
+
+    .faq-input {
+        max-width: 100%; /* Allow input to take full width */
+        margin-bottom: 1rem;
+    }
+
+    .faq-submit {
+        min-width: 100%; /* Make the button full width */
+    }
+
+    .faq-item {
+        padding: 0.8rem; /* Slightly reduce padding for small screens */
+    }
+}
+
+@media (max-width:1200px) {
+    .faq-container {
+        flex-direction: column;
+        padding: 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .faq-left, .faq-right {
+        width: 90%; /* Stack the left and right sections on smaller screens */
+        margin-bottom: 1rem;
+    }
+
+    .faq-left h1 {
+        font-size: 1.8rem;
+    }
+
+    .faq-left h2 {
+        font-size: 1.3rem;
+    }
+
+    .faq-form {
+        flex-direction: column; /* Stack input and button vertically */
+    }
+
+    .faq-input {
+        max-width: 100%; /* Allow input to take full width */
+        margin-bottom: 1rem;
+    }
+
+    .faq-submit {
+        min-width: 100%; /* Make the button full width */
+    }
+
+    .faq-item {
+        padding: 0.8rem; /* Slightly reduce padding for small screens */
+    }
+}

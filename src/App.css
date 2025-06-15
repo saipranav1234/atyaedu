@@ -1,0 +1,9 @@
+button:focus {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+
+  .app {
+    background-color: white;
+    
+  }

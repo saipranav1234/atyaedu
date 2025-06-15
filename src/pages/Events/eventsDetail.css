@@ -1,0 +1,246 @@
+
+.event-detail-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+}
+.event-not-found {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #e74c3c;
+  margin-top: 50px;
+}
+
+.event-detail-banner {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  margin-right: 30px;
+  height: 300px; /* Reduced size */
+}
+
+.event-detail-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-detail-content h1 {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.event-detail-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.tags {
+  margin-bottom: 20px;
+}
+
+.tag {
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-right: 10px;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.event-info {
+  margin-bottom: 20px;
+}
+
+.event-info p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #777;
+}
+
+.additional-info {
+  margin-bottom: 20px;
+}
+
+.additional-info h3 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.register-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .event-detail-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .event-detail-banner {
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px; /* Fixed height for smaller screens */
+  }
+
+  .event-detail-content {
+    width: 100%;
+  }
+  .calendar {
+    padding: 25px;
+    width: 25rem;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin: 0 auto; /* Center the calendar */
+  }
+
+  .calendar-days,
+  .calendar-dates {
+    grid-template-columns: repeat(7, 4fr);
+    gap: 1px;
+  }
+
+  .calendar-dates div {
+    font-size: 14px;
+    padding: 4px;
+  }
+
+  .calendar-dates .active-date {
+    font-size: 15px;
+  }
+  .schedule{
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-detail-container {
+    padding: 15px;
+  }
+
+  .event-detail-banner {
+    height: 150px; /* Fixed height for very small screens */
+  }
+
+  .event-detail-content h1 {
+    font-size: 1.6em;
+  }
+
+  .event-detail-content p {
+    font-size: 0.9em;
+  }
+
+  .additional-info h3 {
+    font-size: 1.2em;
+  }
+
+  .register-button {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+  .calendar {
+    padding: 25px;
+    width: 21rem;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin: 0 auto; /* Center the calendar */
+  }
+
+  .calendar-days,
+  .calendar-dates {
+    grid-template-columns: repeat(7, 4fr);
+    gap: 1px;
+  }
+
+  .calendar-dates div {
+    font-size: 14px;
+    padding: 4px;
+  }
+
+  .calendar-dates .active-date {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 800px) {
+  .events-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .events-sidebar {
+    width: 100%;
+    order: 2;
+  }
+  .events-list{
+    width: 40rem;
+    margin: 2;
+    margin-left: -5rem;
+  }
+
+  .calendar {
+    padding: 25px;
+    width: 25rem;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin: 0 auto; /* Center the calendar */
+  }
+
+  .calendar-days,
+  .calendar-dates {
+    grid-template-columns: repeat(7, 4fr);
+    gap: 1px;
+  }
+
+  .calendar-dates div {
+    font-size: 14px;
+    padding: 4px;
+  }
+
+  .calendar-dates .active-date {
+    font-size: 15px;
+  }
+
+  .schedule {
+    padding: 10px;
+    margin-top: 2rem;
+  }
+
+  .schedule li {
+    font-size: 14px;
+  }
+}

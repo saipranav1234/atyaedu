@@ -1,0 +1,87 @@
+/* Remove unnecessary margin or padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.clients-container {
+  background-color: #ffffff;
+  padding: 10rem 2rem 5rem 2rem;  /* Adjusted padding */
+  text-align: center;
+  margin-top: -10rem;
+  margin-bottom: 2rem;
+}
+
+.clients-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clients-title {
+  font-size: 2.5rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+.clients-title::after {
+  content: '';
+  position: absolute;
+  width: 8rem;
+  height: 4px;
+  background-color: orange;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+.clients-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 4rem; /* Reduced margin-top */
+}
+
+.client-logo {
+  width: 200px;
+  height: 120px;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.client-logo:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .clients-title {
+    font-size: 2rem;
+  }
+
+  .clients-container {
+    padding: 0;
+    background-color: #333;
+    margin-top: 11rem;
+  }
+
+  .clients-logos {
+    gap: 1px;
+  }
+
+  .client-logo {
+    max-width: 120px;
+  }
+}
+
+/* @media (max-width: 480px) {
+  .clients-title {
+    font-size: 1.8rem;
+  }
+
+  .client-logo {
+    max-width: 100px;
+  }
+} */

@@ -1,0 +1,92 @@
+.courses-page {
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10rem;
+    /* margin-top: 6rem; */
+    
+}
+/*New Drop down styles*/
+/* Add this to your CSS file */
+.drop-down-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .drop-down-label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  .drop-down {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .drop-down:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  .drop-down:hover {
+    border-color: #0056b3;
+  }
+  
+.courses-h1 {
+     
+    margin-bottom: 2rem;
+}
+
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+
+.drop-down {
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 1200px) {
+    .card-section {
+        grid-template-columns:  repeat(2,1fr);
+    }
+    
+
+    
+}
+
+@media screen and (max-width : 900px) {
+    .card-section {
+        grid-template-columns:  repeat(1,1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .courses-page {
+        margin-top: 7rem;
+    }
+    .drop-down {
+        
+    }
+    
+}

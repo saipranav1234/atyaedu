@@ -1,0 +1,115 @@
+.coursespage-card {
+  background-color: white;
+  border: 1px solid #dddddd85;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.coursespage-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.coursespage-card:hover .courses-arrow {
+  color: #07b0f8;
+}
+
+.coursespage-img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+.text-part-courses {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex: 1;
+  gap: 0.8rem;
+}
+
+.text-part-courses h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.text-part-courses p {
+  margin: 0;
+  color: #666;
+}
+
+.courses-card-part {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: auto;
+}
+
+.courses-card-part p {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.courses-time {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.text-part-courses .coursespage-price {
+  font-size: 1.5rem;
+  color: black;
+  /* font-weight: bold; */
+  margin-top: auto;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.courses-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+.coursespage-price {
+  font-size: 1.5rem;
+  color: black;
+  /* font-weight: bold; */
+}
+
+.courses-arrow {
+  font-size: 1.8rem;
+  /* color: #2a9d8f; */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-left: auto;
+}
+
+.courses-arrow:hover {
+  transform: scale(1.1);
+}
+
+
+@media screen and (max-width : 720px) {
+  .coursespage-card:hover {
+    transform: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  .coursespage-card {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,75 @@
+.texts-container {
+  display: flex;
+  gap: 10px; /* Adjust spacing between spans */
+  position: fixed; /* Keeps spans positioned properly */
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  top: 0;
+  flex-direction: column;
+}
+.span-1, .span-2 {
+  position: relative; /* Remove absolute positioning */
+  font-size: 1.5rem;
+  color: black;
+  margin-right: 0.5rem;
+  
+}
+.preloader-img {
+  display: flex;
+  position: relative;
+}
+
+.preloaderlogo {
+  width: 8.5rem;
+  margin-right: 1rem;
+  display: flex;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.preloadercenter {
+  display: flex;
+  gap: 0.5rem;
+}
+.word {
+  display: inline-block; /* Allows GSAP to animate Y-axis */
+  /* gap: 1rem; */ 
+}
+
+
+
+@media screen and (max-width : 900px) {
+  .texts-container {
+    z-index: 200;
+    top: -5rem;
+  }
+  .span-1, .span-2 {
+    font-size: 0.8rem;
+  }
+  .preloaderlogo {
+    width: 5rem;
+    margin-right: 0.25rem;
+  }
+  
+}
+
+
+@media screen and (max-width : 400px) {
+  .span-1, .span-2 {
+    font-size: 0.6rem;
+  }
+
+.preloadercenter {
+  display: flex;
+  gap: 0.5rem;
+}
+  .preloaderlogo {
+    width: 4rem;
+    margin-right: 0.05rem;
+  }
+  
+}

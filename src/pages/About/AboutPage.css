@@ -1,0 +1,118 @@
+.AboutPage {
+    /* margin-top: -4rem; */
+    /* padding: 20px; */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .ourteam {
+    padding: 4rem 0;
+  }
+
+  .about-h2 {
+    text-align: center;
+    font-family: "Open Sans", serif;
+    font-weight: 700;
+    margin-top: 4rem;
+    font-size: 2.2rem;
+  }
+
+  .about-p {
+    text-align: center;
+    margin-top: 2rem;
+    
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Exactly 4 cards per row */
+    gap: 1rem; /* Space between cards */
+    justify-content: center; /* Ensures cards are centered horizontally */
+    padding: 4rem 0;
+  }
+    
+  
+  .card {
+    padding: 1.5rem;
+    background-color: rgba(239, 239, 240, 0.366);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .card-position {
+    color: rgba(0, 0, 255, 0.646);
+    font-family: "Open Sans", serif;
+    font-weight: 700;
+  }
+  
+.card-img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    /* border-radius: 1.5rem; */
+}
+  
+.card-details {
+   color: rgba(0, 0, 0, 0.467);
+}
+.card-social {
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.abt {
+    color: rgba(0, 0, 0, 0.467);
+}
+
+.about-us-com {
+  /* background-color: aliceblue; */
+  width: 100%;
+}
+
+@media screen and (max-width : 1000px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Exactly 4 cards per row */
+    gap: 1rem; /* Space between cards */
+    justify-content: center; /* Ensures cards are centered horizontally */
+    padding: 4rem 0;
+  }
+  
+}
+
+
+@media screen and (max-width : 600px) {
+    .AboutPage {
+        margin-top: -2rem;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        padding: 0.7rem;
+        gap: 0.5rem;
+    }
+    .card-img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .ourteam {
+        padding: 1rem;
+    }
+    .card-details {
+        text-align: center;
+    }
+    
+}
